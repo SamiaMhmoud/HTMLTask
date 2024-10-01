@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        table{
+            width: 80%;
+            margin: 30px;
+        }
+        .form input,.form {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #0d9aa6;
+        }
+        table, th, td,.form {
+            border-collapse: collapse;
+            border: 1px solid #0d9aa6;
+            text-transform: capitalize;
+        }
+        th,tfoot td:first-child,h4 {
+            color: #0d9aa6;
+        }
+        td {
+            color: rgb(77, 76, 76);
+        }
+        th,td,.email {
+            text-align: center;
+            padding:10px 0;
+        }
+        .email:first-child {
+            border-bottom: 1px solid #0d9aa6;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form Example</h1>
+    <p>This is an example of an <del>HTML4</del> <u>HTML5</u> from containing يحتوي various <mark>input</mark> controls</p>
+    <form>
+        <h4>User Information</h4>
+        <div class="form">
+            <label for="user">Username:</label><br>
+            <input type="text" id="user" name="user"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="pass">passward:</label><br>
+            <input type="password" id="pass" name="pass">
+        </div>
+        <h4>Contact Information</h4>
+        <div class="form">
+            <label for="phone">phone:</label><br>
+            <input type="phone" id="phone" name="phone"><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" rows="10" cols="30"></textarea>
+        </div>
+        <h4>Subscription</h4>
+        <div class="form">
+            <label for="news1">Subscribe to newsletter:</label>
+            <input type="checkbox" id="news1" name="news1" value="news1"><br/>
+            <label for="news2">Subscribe to newsletter:</label>
+            <input type="checkbox" id="news2" name="news2" value="news2">
+        </div>
+        <h4>Prefferd Language</h4>
+        <div class="form">
+            <label for="lang">Select Your Language:</label>
+            <select id="lang" name="lang">
+                <option value="Arabic">Arabic</option>
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+            </select>
+        </div>
+        <h4>Feedback</h4>
+        <div class="form">
+            <label>Rate our service:</label><br/>
+            <input type="range"> <br/>
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+
+      <table>
+        <thead>
+          <th>group</th>
+          <th>avatar</th>
+          <th>name</th>
+          <th>email</th>
+          <th>character</th>
+          <th>profile</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">ninja</td>
+                <tr>
+                    <td><div><img src="./images/1.jpg" alt="1" width="100px"></div></td>
+                    <td >Mohammed</br>Ahmad</td>
+                    <td>
+                        <div class="email">example@.com</div>
+                        <div class="email">example@.com</div>
+                    </td>
+                    <td>&copy;</td>
+                    <td><a href="#">profile</a></td>
+                </tr>
+                <tr>
+                     <td>
+                    <div><img src="./images/2.jpg" alt="1" width="100px"></div>
+                </td>
+                <td >Mohammed</br>Ahmad</td>
+                <td>
+                    <div class="email">example@.com</div>
+                    <div class="email">example@.com</div>
+                </td>
+                <td>&copy;</td>
+                <td><a href="#">profile</a></td>
+                </tr>  
+            </tr>
+            <tr>
+                <td rowspan="3">monsters</td>
+                <tr>
+                    <td><div><img src="./images/3.jpg" alt="1" width="100px"></div></td>
+                    <td ></td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td><a href="#"></a></td>
+                </tr>     
+            </tr>                
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">total</td>
+                <td colspan="1">3</td>
+            </tr>
+        </tfoot>
+      </table>
+
+    <h2>My Skils</h2>
+    <ul>
+    <li>Html</li>
+    <li>CSS</li>
+    <li>Java script
+        <ul>
+        <li>Vue js</li>
+        <li>React js</li>
+        <li>Anguler js
+            <ol start="4"> 
+                <li>v4.0</li>
+                <li>v5.0</li>
+                <li>v6.0</li>
+                <li>v7.0</li>
+                <li>v8.0</li>
+            </ol>
+        </li>
+        <li>svelte</li>
+        </ul>
+    </li>
+    <li>Python</li>
+    </ul>
+</body>
+</html>
